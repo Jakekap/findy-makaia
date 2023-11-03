@@ -66,4 +66,35 @@
         display: flex;
         gap: 1rem;
     }
+
+    &__icon-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    &__icon, &__icon-save {
+        width: 27.119px;
+        cursor: pointer;
+    }
+
+    &__icon-full {
+        filter: invert(79%) sepia(22%) saturate(7493%) hue-rotate(312deg) brightness(97%) contrast(107%);
+    }
+
+    &__icon-description {
+        font-size: 11px;
+    }
+
+    &__post-description {
+        font-size: 12px;
+        font-weight: 400;
+
+        strong {
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+
 }
