@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
 const HomeFeed = () => {
-  return (
-    <div>
-      HomeFeed
-    </div>
-  )
-}
+  const [posts, setPosts] = useState([]);
+  const [user, setUser] = useState({});
+  const [isInteracting, setIsInteracting] = useState(false);
 
-export default HomeFeed
+  useEffect(() => {
+    getData()
+  }, [isInteracting]);
+
+    const getData = async () => {
+
+    }
+    return(
+    <main>
+        
+    </main>
+  )
+};
+
+export default HomeFeed;
