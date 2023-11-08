@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Masonry } from "@mui/lab";
 import { getTaggedPost } from "../../services/postService";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function PostsProfile({ posts, typeMedia, idUser }) {
   const [arrayPosts, setArrayPosts] = React.useState([]);
   const navigate = useNavigate();
-  const params = useParams();
 
   const viewPost = (goTo) => {
     navigate(`${goTo}`);
@@ -70,3 +70,8 @@ export default function PostsProfile({ posts, typeMedia, idUser }) {
     </Masonry>
   );
 }
+PostsProfile.propTypes = {
+  posts: PropTypes.array,
+  typeMedia: PropTypes.string,
+  idUser: PropTypes.string,
+};

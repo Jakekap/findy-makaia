@@ -1,6 +1,5 @@
-import React from 'react'
-import "./header.scss"
-import Carrousel from '../carrousel/Carrousel'
+import "./header.scss";
+import Carrousel from "../carrousel/Carrousel";
 
 const Header = () => {
   return (
